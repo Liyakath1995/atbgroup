@@ -592,14 +592,19 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+   <!-- Main Content -->
     <main id="main-content">
-        <!-- Hero Carousel Section with Construction Content -->
+        <!-- 
+          Hero Carousel Section 
+          - data-flickity options control the carousel behavior.
+          - We use 'imagesLoaded: true' to prevent layout jank.
+          - 'adaptiveHeight: false' is set because our slides are all 100vh.
+        -->
         <section id="home" class="hero-carousel" 
                  data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 7000, "wrapAround": true, "prevNextButtons": true, "pageDots": true, "pauseAutoPlayOnHover": false, "imagesLoaded": true, "adaptiveHeight": false }'>
             
             <!-- Slide 1: Construction Excellence in Qatar -->
-              <div class="carousel-cell hero-slide" 
+            <div class="carousel-cell hero-slide" 
                  style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop');"
                  role="img" 
                  aria-label="Traffic management and road safety equipment on construction site">
@@ -619,7 +624,7 @@
                     </div>
                 </div>
             </div>
-          
+        
             
             <!-- Slide 2: Road Construction & Infrastructure -->
             <div class="carousel-cell hero-slide" 
@@ -630,14 +635,10 @@
                     <div class="container mx-auto px-4 sm:px-6 lg:px-8 hero-content text-center text-white">
                         <span class="slide-label inline-block bg-brand-accent/20 backdrop-blur-sm border border-brand-accent text-brand-accent font-bold uppercase tracking-widest text-xs md:text-sm px-4 py-2 rounded-full mb-6">Road Infrastructure Experts</span>
                         <h1 class="slide-title text-4xl md:text-6xl lg:text-7xl font-black font-heading mb-6 leading-tight">
-                            Temporary <span class="text-brand-accent"> Traffic
-</span><br class="hidden md:block"> Management & Tma Rental
+                            Temporary <span class="text-brand-accent">Traffic</span><br class="hidden md:block"> Management & TMA Rental
                         </h1>
                         <p class="slide-description text-lg md:text-2xl font-light mb-10 max-w-4xl mx-auto leading-relaxed">
-                            We also provide Truck Mounted
-Attenuator (TMA) rental services, helping to protect
-workers and vehicles while maintaining smooth traffic flow
-on-site.
+                            We also provide Truck Mounted Attenuator (TMA) rental services, helping to protect workers and vehicles while maintaining smooth traffic flow on-site.
                         </p>
                         <div class="slide-cta flex flex-col sm:flex-row justify-center gap-5">
                             <a href="#projects" class="btn-primary">View Projects</a>
@@ -647,31 +648,52 @@ on-site.
                 </div>
             </div>
             
-            <!-- Slide 3: Traffic Management & Safety [UPDATED] -->
+            <!-- Slide 3: Traffic Management & Safety [UPDATED IMAGE & TEXT] -->
             <div class="carousel-cell hero-slide" 
-                 style="background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop');"
+                 style="background-image: url('https://images.unsplash.com/photo-1618060931580-5f216061cff5?q=80&w=2070&auto=format&fit=crop');"
                  role="img" 
-                 aria-label="Traffic management and road safety equipment on construction site">
+                 aria-label="A Truck Mounted Attenuator (TMA) vehicle on a highway for road safety">
                 <div class="hero-overlay">
                     <div class="container mx-auto px-4 sm:px-6 lg:px-8 hero-content text-center text-white">
-                        <span class="slide-label inline-block bg-brand-accent/20 backdrop-blur-sm border border-brand-accent text-brand-accent font-bold uppercase tracking-widest text-xs md:text-sm px-4 py-2 rounded-full mb-6">Qatar's #1 in Road Safety</span>
+                        <span class="slide-label inline-block bg-brand-accent/20 backdrop-blur-sm border border-brand-accent text-brand-accent font-bold uppercase tracking-widest text-xs md:text-sm px-4 py-2 rounded-full mb-6">Ashghal Compliant</span>
                         <h1 class="slide-title text-4xl md:text-6xl lg:text-7xl font-black font-heading mb-6 leading-tight">
-                            Number One in <span class="text-brand-accent">Traffic 
-</span><br class="hidden md:block"> Diversion Plan (Tdp)
+                            Traffic Diversion Plan <span class="text-brand-accent">(TDP)</span><br class="hidden md:block"> Design & Approval
                         </h1>
                         <p class="slide-description text-lg md:text-2xl font-light mb-10 max-w-4xl mx-auto leading-relaxed">
-                            We provide Temporary Traffic Management (TTM)
-drawing and design services in full compliance with
-Ashghal's Work Zone Traffic Management Guidelines
-(WZTMG).
+                            We provide Temporary Traffic Management (TTM) drawing and design services in full compliance with Ashghal's Work Zone Traffic Management Guidelines (WZTMG).
                         </p>
                         <div class="slide-cta flex flex-col sm:flex-row justify-center gap-5">
-                            <a href="#services" class="btn-primary">Safety Solutions</a>
-                            <a href="#contact" class="btn-secondary">Get TMA Rental</a>
+                            <a href="#services" class="btn-primary">All Services</a>
+                            <a href="#contact" class="btn-secondary">Get a Quote</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+        </section>
+        
+        <!-- Other content sections would go here -->
+        <section id="services" class="py-20 bg-white min-h-[50vh]">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold">Services Section</h2>
+                <p class="mt-4 text-lg">Your other content, like services, would go here.</p>
+            </div>
+        </section>
+        <section id="projects" class="py-20 bg-gray-50 min-h-[50vh]">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold">Projects Section</h2>
+                <p class="mt-4 text-lg">Your other content, like projects, would go here.</p>
+            </div>
+        </section>
+        <section id="contact" class="py-20 bg-brand-primary text-white min-h-[50vh]">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold">Contact Section</h2>
+                <p class="mt-4 text-lg">Your other content, like a contact form, would go here.</p>
+            </div>
+        </section>
+
+    </main>
+
         <!-- Stats Section -->
         <section class="py-16 bg-gradient-to-r from-brand-dark via-brand-primary to-qatar-maroon text-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
